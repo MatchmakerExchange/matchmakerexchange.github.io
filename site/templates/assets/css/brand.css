@@ -1,0 +1,720 @@
+
+body {
+}
+
+.bg-dark-grey {
+  background-color:#454B51;
+}
+.bg-center-stripe {
+  background-image:url(../brand/bg/center-stripes.gif);
+  background-repeat:repeat-y;
+  background-position:center center;
+}
+
+
+/* container Helpers Updates
+-------------------------------------------------- */
+.container-white {
+  background-color: #fff;
+}
+.container-clear {
+  background: none !important;
+}
+.container-black {
+  background: #000 !important;
+}
+
+/* background Helpers Updates
+-------------------------------------------------- */
+.background-white {
+  background-color: #fff;
+}
+.background-clear {
+  background: none !important;
+}
+.background-black {
+  background: #000 !important;
+}
+
+/* Padding Helpers Updates
+-------------------------------------------------- */
+.padding-bottom-none {
+  padding-bottom: 0px !important;
+}
+.padding-bottom-xs {
+  padding-bottom: 5px !important;
+}
+.padding-bottom-sm {
+  padding-bottom: 10px !important;
+}
+.padding-bottom-md {
+  padding-bottom: 20px !important;
+}
+.padding-bottom-lg {
+  padding-bottom: 30px !important;
+}
+.padding-bottom-xl {
+  padding-bottom: 40px !important;
+}
+.padding-top-none {
+  padding-top: 0px !important;
+}
+.padding-top-xs {
+  padding-top: 5px !important;
+}
+.padding-top-sm {
+  padding-top: 10px !important;
+}
+.padding-top-md {
+  padding-top: 20px !important;
+}
+.padding-top-lg {
+  padding-top: 30px !important;
+}
+.padding-top-xl {
+  padding-top: 40px !important;
+}
+.padding-left-none {
+  padding-left: 0px !important;
+}
+.padding-left-xs {
+  padding-left: 5px !important;
+}
+.padding-left-sm {
+  padding-left: 10px !important;
+}
+.padding-left-md {
+  padding-left: 20px !important;
+}
+.padding-left-lg {
+  padding-left: 30px !important;
+}
+.padding-left-xl {
+  padding-left: 40px !important;
+}
+.padding-right-none {
+  padding-right: 0px !important;
+}
+.padding-right-xs {
+  padding-right: 5px !important;
+}
+.padding-right-sm {
+  padding-right: 10px !important;
+}
+.padding-right-md {
+  padding-right: 20px !important;
+}
+.padding-right-lg {
+  padding-right: 30px !important;
+}
+.padding-right-xl {
+  padding-right: 40px !important;
+}
+.padding-none {
+  padding: 0px !important;
+}
+.padding-xs {
+  padding: 5px !important;
+}
+.padding-sm {
+  padding: 10px !important;
+}
+.padding-md {
+  padding: 20px !important;
+}
+.padding-md {
+  padding: 30px !important;
+}
+.padding-md {
+  padding: 40px !important;
+}
+
+
+
+.margin-bottom-none {
+  margin-bottom: 0px !important;
+}
+.margin-bottom-xs {
+  margin-bottom: 5px !important;
+}
+.margin-bottom-sm {
+  margin-bottom: 10px !important;
+}
+.margin-bottom-md {
+  margin-bottom: 20px !important;
+}
+.margin-bottom-lg {
+  margin-bottom: 30px !important;
+}
+.margin-bottom-xl {
+  margin-bottom: 40px !important;
+}
+.margin-top-none {
+  margin-top: 0px !important;
+}
+.margin-top-xs {
+  margin-top: 5px !important;
+}
+.margin-top-sm {
+  margin-top: 10px !important;
+}
+.margin-top-md {
+  margin-top: 20px !important;
+}
+.margin-top-lg {
+  margin-top: 30px !important;
+}
+.margin-top-xl {
+  margin-top: 40px !important;
+}
+.margin-left-none {
+  margin-left: 0px !important;
+}
+.margin-left-xs {
+  margin-left: 5px !important;
+}
+.margin-left-sm {
+  margin-left: 10px !important;
+}
+.margin-left-md {
+  margin-left: 20px !important;
+}
+.margin-left-lg {
+  margin-left: 30px !important;
+}
+.margin-left-xl {
+  margin-left: 40px !important;
+}
+.margin-right-none {
+  margin-right: 0px !important;
+}
+.margin-right-xs {
+  margin-right: 5px !important;
+}
+.margin-right-sm {
+  margin-right: 10px !important;
+}
+.margin-right-md {
+  margin-right: 20px !important;
+}
+.margin-right-lg {
+  margin-right: 30px !important;
+}
+.margin-right-xl {
+  margin-right: 40px !important;
+}
+.margin-none {
+  margin: 0px !important;
+}
+.margin-xs {
+  margin: 5px !important;
+}
+.margin-sm {
+  margin: 10px !important;
+}
+.margin-md {
+  margin: 20px !important;
+}
+.margin-md {
+  margin: 30px !important;
+}
+.margin-md {
+  margin: 40px !important;
+}
+
+
+
+/* Clears
+-------------------------------------------------- */
+.clear-left {
+  clear:left !important;
+}
+.clear-right {
+  clear:right !important;
+}
+
+/* Text Helpers Updates
+-------------------------------------------------- */
+.nowrap {
+  white-space:nowrap;
+}
+.text-10px {
+  font-size: 5px !important;
+}
+.text-11px {
+  font-size: 5px !important;
+}
+.text-xl {
+  font-size: 160% !important;
+}
+.text-lg {
+  font-size: 140% !important;
+}
+.text-md {
+  font-size: 120% !important;
+}
+.text-sm {
+  font-size: 90% !important;
+}
+.text-xs {
+  font-size: 75% !important;
+}
+.font-default {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+.text-bold {
+  font-weight:bold !important;
+}
+.text-white {
+  color: #fff !important;
+}
+.text-black {
+  color: #000;
+}
+.text-underline {
+  text-decoration:underline;
+}
+.text-green {
+  color: #0e733b;
+}
+.text-blue {
+  color: #0066cc;
+}
+.text-muted, .text-grey {
+  color: #86878B;
+}
+
+.text-tight {
+  line-height: normal;
+}
+
+
+/* Border Helpers Updates
+-------------------------------------------------- */
+.border-bottom {
+  border-bottom: 1px #ccc solid;
+}
+.border-top {
+  border-top: 1px #ccc solid;
+}
+.border-left {
+  border-left: 1px #ccc solid;
+}
+.border-right {
+  border-right: 1px #ccc solid;
+}
+.border {
+  border: 1px #ccc solid;
+}
+
+#editpage {
+  position: absolute;
+  top: 0px;
+  padding: 8px 10px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #000;
+  right: 0px;
+  z-index:10000;
+  background-color: #FFC100;
+}
+
+
+/* Video
+-------------------------------------------------- */
+.flex-video {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 67.5%;
+  height: 0;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+.flex-video.widescreen {
+  padding-bottom: 57.25%;
+}
+.flex-video.vimeo {
+  padding-top: 0;
+}
+.flex-video iframe, .flex-video object, .flex-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* MEDIA Helpers
+-------------------------------------------------- */
+
+@media (max-width: 767px) {
+/* MEDIA-XS */
+.bg-center-stripe {
+  background-image:none !important;
+}
+
+
+/* Padding Helpers Updates
+-------------------------------------------------- */
+.padding-bottom-none {
+  padding-bottom: 0px !important;
+}
+.padding-bottom-xs {
+  padding-bottom: 2px !important;
+}
+.padding-bottom-sm {
+  padding-bottom: 5px !important;
+}
+.padding-bottom-md {
+  padding-bottom: 10px !important;
+}
+.padding-bottom-lg {
+  padding-bottom: 15px !important;
+}
+.padding-bottom-xl {
+  padding-bottom: 20px !important;
+}
+.padding-top-none {
+  padding-top: 0px !important;
+}
+.padding-top-xs {
+  padding-top: 2px !important;
+}
+.padding-top-sm {
+  padding-top: 5px !important;
+}
+.padding-top-md {
+  padding-top: 10px !important;
+}
+.padding-top-lg {
+  padding-top: 15px !important;
+}
+.padding-top-xl {
+  padding-top: 20px !important;
+}
+.padding-left-none {
+  padding-left: 0px !important;
+}
+.padding-left-xs {
+  padding-left: 2px !important;
+}
+.padding-left-sm {
+  padding-left: 5px !important;
+}
+.padding-left-md {
+  padding-left: 10px !important;
+}
+.padding-left-lg {
+  padding-left: 15px !important;
+}
+.padding-left-xl {
+  padding-left: 20px !important;
+}
+.padding-right-none {
+  padding-right: 0px !important;
+}
+.padding-right-xs {
+  padding-right: 2px !important;
+}
+.padding-right-sm {
+  padding-right: 5px !important;
+}
+.padding-right-md {
+  padding-right: 10px !important;
+}
+.padding-right-lg {
+  padding-right: 15px !important;
+}
+.padding-right-xl {
+  padding-right: 10px !important;
+}
+.padding-none {
+  padding: 0px !important;
+}
+.padding-xs {
+  padding: 2px !important;
+}
+.padding-sm {
+  padding: 5px !important;
+}
+.padding-md {
+  padding: 10px !important;
+}
+.padding-md {
+  padding: 15px !important;
+}
+.padding-md {
+  padding: 20px !important;
+}
+
+
+
+.margin-bottom-none {
+  margin-bottom: 0px !important;
+}
+.margin-bottom-xs {
+  margin-bottom: 2px !important;
+}
+.margin-bottom-sm {
+  margin-bottom: 5px !important;
+}
+.margin-bottom-md {
+  margin-bottom: 10px !important;
+}
+.margin-bottom-lg {
+  margin-bottom: 20px !important;
+}
+.margin-bottom-xl {
+  margin-bottom: 20px !important;
+}
+.margin-top-none {
+  margin-top: 0px !important;
+}
+.margin-top-xs {
+  margin-top: 2px !important;
+}
+.margin-top-sm {
+  margin-top: 5px !important;
+}
+.margin-top-md {
+  margin-top: 10px !important;
+}
+.margin-top-lg {
+  margin-top: 15px !important;
+}
+.margin-top-xl {
+  margin-top: 20px !important;
+}
+.margin-left-none {
+  margin-left: 0px !important;
+}
+.margin-left-xs {
+  margin-left: 2px !important;
+}
+.margin-left-sm {
+  margin-left: 5px !important;
+}
+.margin-left-md {
+  margin-left: 10px !important;
+}
+.margin-left-lg {
+  margin-left: 15px !important;
+}
+.margin-left-xl {
+  margin-left: 20px !important;
+}
+.margin-right-none {
+  margin-right: 0px !important;
+}
+.margin-right-xs {
+  margin-right: 2px !important;
+}
+.margin-right-sm {
+  margin-right: 4px !important;
+}
+.margin-right-md {
+  margin-right: 10px !important;
+}
+.margin-right-lg {
+  margin-right: 15px !important;
+}
+.margin-right-xl {
+  margin-right: 20px !important;
+}
+.margin-none {
+  margin: 0px !important;
+}
+.margin-xs {
+  margin: 2px !important;
+}
+.margin-sm {
+  margin: 5px !important;
+}
+.margin-md {
+  margin: 10px !important;
+}
+.margin-md {
+  margin: 15px !important;
+}
+.margin-md {
+  margin: 20px !important;
+}
+
+
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+/* MEDIA-SM */
+.navbar-nav > li > a {
+  padding-left:10px !important;
+  padding-right:10px !important;
+}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+/* MEDIA-MD */
+
+}
+
+@media (min-width: 1200px) {
+/* MEDIA-LG */
+
+}
+
+
+
+
+
+@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+.flex-video {
+  padding-top: 0;
+}
+}
+/* Heading Updates
+-------------------------------------------------- */
+h1, h2, h3, h4, h5 {
+  font-weight: 200 !important;
+  margin-bottom: 5px !important;
+}
+
+@media (max-width: 768px) {
+h1 {
+  font-size: 2em !important;
+}
+h2 {
+  font-size: 1.75em !important;
+}
+#heroCarousel h2 {
+  font-size: 2em !important;
+}
+h3 {
+  font-size:  8% !important;
+}
+h4 {
+  font-size: 1.25em !important;
+}
+.content-border {
+  border-right: none;
+}
+}
+/* Classes */
+.pull-left {
+  float: left !important;
+}
+.pull-right {
+  float: right !important;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+#i1 .navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar-last {
+  margin-right: 30px;
+}
+/* CUSTOMIZE homeCarousel CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+#homeCarousel.carousel, #homeCarousel {
+  height: 300px;
+  margin-bottom: 10px;
+}
+/* Since positioning the image, we need to help out the caption */
+#homeCarousel .carousel-caption {
+  z-index: 10;
+}
+/* Declare heights because of positioning of img element */
+#homeCarousel.carousel .item, #homeCarousel .item {
+  height: 300px;
+  background-color: #777;
+}
+#homeCarousel .carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 300px;
+}
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+/* Remove the edge padding needed for mobile */
+.marketing {
+  padding-right: 0;
+  padding-left: 0;
+}
+/* Navbar positioning foo */
+.navbar-wrapper {
+  margin-top: 10px;
+}
+.navbar-wrapper .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar {
+  padding-right: 0;
+  padding-left: 0;
+}
+/* The navbar becomes detached from the top, so we round the corners */
+.navbar-wrapper .navbar {
+  border-radius: 4px;
+}
+/* Bump up size of carousel content */
+.carousel-caption p {
+  margin-bottom: 10px;
+  font-size: 21px;
+  line-height: 1.4;
+}
+.featurette-heading {
+  font-size: 50px;
+}
+}
+
+@media (min-width: 992px) {
+.featurette-heading {
+  margin-top: 120px;
+}
+}
