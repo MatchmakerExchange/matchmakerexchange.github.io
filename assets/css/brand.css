@@ -6,7 +6,7 @@ body {
   background-color:#454B51;
 }
 .bg-center-stripe {
-  background-image:url(../brand/bg/center-stripes.gif);
+  background-image:url(../images/center-stripes.gif);
   background-repeat:repeat-y;
   background-position:center center;
 }
