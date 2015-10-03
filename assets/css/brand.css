@@ -2,6 +2,26 @@
 body {
 }
 
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #00969c;
+    color: #fff;
+}
+
+.navbar-inverse {
+    background-color: #00abb1;
+    border-color: #246b71;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: #00969c;
+    color: #fff;
+}
+
+.nabbar-mme {
+  margin-bottom:0px;
+  border-radius: 0px;
+}
+
 .bg-dark-grey {
   background-color:#454B51;
 }
@@ -9,6 +29,21 @@ body {
   background-image:url(../images/center-stripes.gif);
   background-repeat:repeat-y;
   background-position:center center;
+}
+
+#nabbar-mme {
+}
+
+#nabbar-mme .dropdown-menu {
+  left:auto !important;
+   width: 100%;
+}
+.text-tight {
+  line-height:normal;
+}
+
+.bg-grey {
+  background-color:#454b51;
 }
 
 
