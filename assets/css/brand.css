@@ -2,6 +2,13 @@
 body {
 }
 
+.wheel {
+  height: auto;
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
 .navbar,
 .navbar-brand {
   color: #fff;
