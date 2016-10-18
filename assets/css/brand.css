@@ -1,12 +1,9 @@
 
-body {
-}
-
 .wheel {
-  height: auto;
-  width: 60%;
-  display: block;
-  margin: 0 auto;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 0 10px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0 0 10px 0px rgba(0, 0, 0, 1);
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 1);
 }
 
 .navbar,
