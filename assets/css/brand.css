@@ -5,6 +5,13 @@
   box-shadow: 0 0 10px 0px rgba(0, 0, 0, 1);
 }
 
+td {
+  text-align: center;
+}
+tr > td:first-of-type {
+  text-align: left;
+}
+
 .navbar,
 .navbar-brand {
   color: #fff;

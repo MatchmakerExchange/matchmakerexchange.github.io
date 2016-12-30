@@ -2,7 +2,6 @@
 title: Clinicians & Laboratories
 ---
 {% include header.html %}
-<div class="alert alert-warning text-center margin-top-none margin-bottom-none text-md" role="alert">Updates coming soon</div>
 <div class='container-fluid bg-grey'>
 <div class='container'>
   <div class='row-fluid clearfix padding-bottom-lg padding-top-sm'>
@@ -24,111 +23,370 @@ title: Clinicians & Laboratories
         <li>To begin querying, choose one of our participating services to deposit your case. Use the charts below to compare the location of the database, the types of data stored by each MME service and the parameters used by each for matching and score output.  You may click on each database to be directed to their website for additional guidance and to begin querying.</li>
         <li>If you have a dataset you'd like to deposit into one of the participating matchmaker services to make available for matching, you may also use the instructions below as a guide. We recommend contacting the database to ask for any special instructions on depositing a dataset.</li>
       </ul>
-      <p class='text-center'><p><img src="assets/images/connection_diagram.gif" class="img-responsive" alt=""/></p></p>
-      <p>Matchmaker Services Connected by MME API:
-	<ul>
-	  <li>DECIPHER <a href="https://decipher.sanger.ac.uk/">https://decipher.sanger.ac.uk/</a></li>
-	  <li>GeneMatcher <a href="https://genematcher.org/">https://genematcher.org/</a></li>
-	  <li>PhenomeCentral <a href="https://phenomecentral.org/">https://phenomecentral.org/</a></li>
-	</ul>
+      <div class="center-block" style="max-width: 600px">
+        <img src='assets/images/wheel.png' class='img-responsive' />
+      </div>
+      <p>Matchmaker Services Connected by the MME API:
+        <ul>
+          <li><a href="https://mme.australiangenomics.org.au/">AGHA Patient Archive</a></li>
+          <li><a href="https://decipher.sanger.ac.uk/">DECIPHER</a></li>
+          <li><a href="https://genematcher.org/">GeneMatcher</a></li>
+          <li><a href="https://seqr.broadinstitute.org/"><i>matchbox</i></a></li>
+          <li><a href="http://monarchinitiative.org/">Monarch Initiative</a></li>
+          <li><a href="https://www.mygene2.org/">MyGene2</a></li>
+          <li><a href="https://phenomecentral.org/">PhenomeCentral</a></li>
+        </ul>
       </p>
       <h3 class="padding-top-lg">Types of Data Stored by Each of the Participating Matchmaker Exchange Services</h3>
-      <table class="table table-striped table-bordered table-responsive">
+
+<table class="table table-striped table-bordered table-responsive">
   <thead>
-    <td class="text-center"></td>
-    <td colspan="3" class="text-center">Phenotype</td>
+    <tr>
+      <td rowspan="2">Service</td>
+      <td colspan="3" class="text-center info">Phenotype</td>
+      <td>&nbsp;</td>
+      <td colspan="4" class="text-center success">Genotype</td>
+      <td colspan="4" class="text-center warning">Candidates</td>
+    </tr>
+    <tr>
+      <td class="info text-sm text-tight">Condition Name</td>
+      <td class="info text-sm text-tight">Diagnosis Code</td>
+      <td class="info text-sm text-tight">Phenotypic Terms</td>
+      <td class="text-sm text-tight">Non-Human Models</td>
+      <td class="success text-sm text-tight">Gene ID</td>
+      <td class="success text-sm text-tight">Chromosomal Coordinates</td>
+      <td class="success text-sm text-tight">Flagged Candidate Variants</td>
+      <td class="success text-sm text-tight">VCF Files or Equivalent</td>
+      <td class="warning text-sm text-tight">Flagged Gene Candidates</td>
+      <td class="warning text-sm text-tight">Evidence for Gene Candidates</td>
+      <td class="warning text-sm text-tight">Variant Classification</td>
+      <td class="warning text-sm text-tight">Variant Evidence</td>
+    </tr>
+  </thead>
+  <tr>
+    <td>AGHA Patient Archive (Australia)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
     <td>&nbsp;</td>
-    <td colspan="4" class="text-center">Genotype</td>
-    <td colspan="2" class="text-center">Candidates</td>
-    </thead>
-  <thead class="">
-      <td class="text-center">Service</td>
-    <td class="info text-sm text-tight">Condition Name</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>DECIPHER (UK)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+  <tr>
+    <td>GeneMatcher (USA)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><i>matchbox</i> (USA)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Monarch Initiative (USA)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>MyGene2 (USA)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>PhenomeCentral (Canada)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+</table>
+
+      <h3 class="padding-top-lg">Parameters Used for Matching and Score Output</h3>
+
+<table class="table table-striped table-bordered table-responsive">
+  <thead>
+    <td class="info">Service</td>
+    <td class="info text-sm text-tight">Gene ID</td>
     <td class="info text-sm text-tight">Diagnosis Code</td>
     <td class="info text-sm text-tight">Phenotypic Terms</td>
-    <td class=" text-sm text-tight">Non-human Models</td>
-    <td class="success text-sm text-tight">Gene Name</td>
-    <td class="success text-sm text-tight">Chromosomal Coordinates</td>
-    <td class="success text-sm text-tight">Variants</td>
-    <td class="success text-sm text-tight">VCF Files</td>
-    <td class="warning text-sm text-tight">Flagged Gene Candidates</td>
-    <td class="warning text-sm text-tight">Evidence for Gene Candidates</td>
-    </thead>
+    <td class="info text-sm text-tight">Variant Parameters</td>
+    <td class="info text-sm text-tight">Provides Match Score Output</td>
+  </thead>
   <tr>
-    <td><a href="https://phenomecentral.org/">PhenomeCentral</a> (Canada)</td>
+    <td>AGHA Patient Archive (Australia)</td>
     <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>Coming soon</td>
     <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+  <tr>
+    <td>DECIPHER (UK)</td>
     <td><span class='glyphicon glyphicon-ok'></span></td>
     <td>&nbsp;</td>
     <td><span class='glyphicon glyphicon-ok'></span></td>
     <td><span class='glyphicon glyphicon-ok'></span></td>
     <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+  <tr>
+    <td>GeneMatcher (USA)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+  <tr>
+    <td><i>matchbox</i> (USA)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+  <tr>
+    <td>Monarch Initiative (USA)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+  <tr>
+    <td>MyGene2 (USA)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>Coming soon</td>
+    <td>Coming soon</td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+  <tr>
+    <td>PhenomeCentral (Canada)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
     <td><span class='glyphicon glyphicon-ok'></span></td>
     <td><span class='glyphicon glyphicon-ok'></span></td>
     <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+</table>
+
+
+
+      <h3 class="padding-top-lg">Matchmaker Exchange Connections</h3>
+
+<table class="table table-striped table-bordered table-responsive">
+  <thead>
+    <tr>
+      <td></td>
+      <td colspan="7" class="text-center info">Responding Service</td>
     </tr>
+    <tr>
+      <td class="info">Querying Service</td>
+      <td class="text-sm text-tight">AGHA Patient Archive</td>
+      <td class="text-sm text-tight">DECIPHER</td>
+      <td class="text-sm text-tight">GeneMatcher</td>
+      <td class="text-sm text-tight"><i>matchbox</i></td>
+      <td class="text-sm text-tight">Monarch Initiative</td>
+      <td class="text-sm text-tight">MyGene2</td>
+      <td class="text-sm text-tight">PhenomeCentral</td>
+    </tr>
+  </thead>
   <tr>
-    <td><a href="https://genematcher.org/">GeneMatcher</a> (USA)</td>
+    <td>AGHA Patient Archive (Australia)</td>
+    <td>&nbsp;</td>
+    <td>Coming Soon</td>
     <td><span class='glyphicon glyphicon-ok'></span></td>
     <td><span class='glyphicon glyphicon-ok'></span></td>
     <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>Coming Soon</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+  <tr>
+    <td>DECIPHER (UK)</td>
+    <td>Coming Soon</td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>Coming Soon</td>
+    <td>&nbsp;</td>
+    <td>Coming Soon</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+  <tr>
+    <td>GeneMatcher (USA)</td>
     <td><span class='glyphicon glyphicon-ok'></span></td>
     <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
     <td><span class='glyphicon glyphicon-ok'></span></td>
     <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+  <tr>
+    <td><i>matchbox</i> (USA)</td>
+    <td>&nbsp;</td>
+    <td>Coming Soon</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td><span class='glyphicon glyphicon-ok'></span></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
-    <td><a href="https://decipher.sanger.ac.uk/">DECIPHER</a> (UK)</td>
+    <td>Monarch Initiative (USA)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>MyGene2 (USA)</td>
+    <td>Coming Soon</td>
+    <td>Coming Soon</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
     <td><span class='glyphicon glyphicon-ok'></span></td>
     <td>&nbsp;</td>
-    <td><span class='glyphicon glyphicon-ok'></span></td>
     <td>&nbsp;</td>
     <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+  <tr>
+    <td>PhenomeCentral (Canada)</td>
     <td><span class='glyphicon glyphicon-ok'></span></td>
     <td><span class='glyphicon glyphicon-ok'></span></td>
-    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
     <td><span class='glyphicon glyphicon-ok'></span></td>
     <td>&nbsp;</td>
   </tr>
-      </table>
-      <h3 class="padding-top-lg">Parameters Used for Matching and Score Output</h3>
-      <table class="table table-striped table-bordered table-responsive">
-        <thead>
-        <td class="text-center"></td>
-          <td colspan="4" class="text-center">Parameters Used For Matching &amp; Score Output</td>
-            </thead>
-                <thead class="">
-        <td class="text-center">Service</td>
-                  <td class="info text-sm text-tight">Gene</td>
-                  <td class="info text-sm text-tight">Diagnosis</td>
-                  <td class="info text-sm text-tight">Phenotypic Features</td>
-                  <td class="info text-sm text-tight">Provides Match Score Output</td>
-                    </thead>
-                        <tr>
-                          <td><a href="https://phenomecentral.org/">PhenomeCentral</a> (Canada)</td>
-                          <td><span class='glyphicon glyphicon-ok'></span></td>
-                          <td><span class='glyphicon glyphicon-ok'></span></td>
-                          <td><span class='glyphicon glyphicon-ok'></span></td>
-                          <td><span class='glyphicon glyphicon-ok'></span></td>
-                        </tr>
-        <tr>
-          <td><a href="https://genematcher.org/">GeneMatcher</a> (USA)</td>
-          <td><span class='glyphicon glyphicon-ok'></span></td>
-          <td><span class='glyphicon glyphicon-ok'></span></td>
-          <td><span class='glyphicon glyphicon-ok'></span></td>
-          <td><span class='glyphicon glyphicon-ok'></span></td>
-        </tr>
-        <tr>
-          <td><a href="https://decipher.sanger.ac.uk/">DECIPHER</a> (UK)</td>
-          <td><span class='glyphicon glyphicon-ok'></span></td>
-          <td>&nbsp;</td>
-          <td><span class='glyphicon glyphicon-ok'></span></td>
-          <td><span class='glyphicon glyphicon-ok'></span></td>
-        </tr>
-      </table>
+</table>
+
+
+
+      <h3 class="padding-top-lg">Types of Users</h3>
+
+<table class="table table-striped table-bordered table-responsive">
+  <thead>
+    <td class="info">Service</td>
+    <td class="info text-sm text-tight">Clinicians</td>
+    <td class="info text-sm text-tight">Patients</td>
+    <td class="info text-sm text-tight">Researchers</td>
+  </thead>
+  <tr>
+    <td>AGHA Patient Archive (Australia)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+  <tr>
+    <td>DECIPHER (UK)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+  <tr>
+    <td>GeneMatcher (USA)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+  <tr>
+    <td><i>matchbox</i> (USA)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+  <tr>
+    <td>Monarch Initiative (USA)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+  <tr>
+    <td>MyGene2 (USA)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+  <tr>
+    <td>PhenomeCentral (Canada)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+</table>
+
       <p>&nbsp;</p>
       <a href='#top' class='pull-right'><span class='glyphicon glyphicon-arrow-up'></span> Return to top </a>
     </div>
