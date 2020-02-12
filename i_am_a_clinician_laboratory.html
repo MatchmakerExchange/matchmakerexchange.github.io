@@ -459,7 +459,8 @@ title: Clinicians & Laboratories
 
   <tr>
     <td>DECIPHER (UK)</td>
-    <td><p>To get the best matches from DECIPHER, include genomic coordinate information with your patient deposition into the system you are querying from. The scoring algorithm for variant similarity takes into account the VEP consequence, assessing the severity and similarity of the consequence. DECIPHER calls this a functional similarity score.</p> <p>All contact requests made external users, whether using Matchmaker Exchange functionality, or using the advance search functionality on the DECIPHER site, are manually vetted for authenticity before being forwarded.</p></td>
+    <td><p>To get the best matches from DECIPHER, include genomic coordinate information with your patient deposition into the system you are querying from. The scoring algorithm for variant similarity takes into account the VEP consequence, assessing the severity and similarity of the consequence. DECIPHER calls this a functional similarity score.</p> <p>All contact requests made from external users, whether using Matchmaker Exchange functionality, or using the advance search functionality on the DECIPHER site, are manually vetted for authenticity before being forwarded.
+</p></td>
     <td><p>When a Matchmaker Exchange request is sent to DECIPHER, we evaluate all open-access patients and variants for similarity.</p>
         <p>First, if any variants are given for the patient, we find variants in our system which overlap the same position. If the position of variants are not given, the gene is used as the position.</p>
         <p>Primarily, genotypic level data is used for matching, falling back to phenotypic data if no genotypic level data is available.</p>
@@ -475,12 +476,12 @@ title: Clinicians & Laboratories
     <td>An email is generated simultaneously to all parties in the match and includes all information matched on.</td>
     <td>An email is generated simultaneously to all parties in the match and includes all information matched on.</td>
   </tr>
-  <tr>
-    <td><i>matchbox</i> (USA)</td>
-    <td>matchbox defines similarity as individuals who share at least one affected gene candidate. To rank these matches, when available, we use attributes such as phenotypes, zygosity, variant type and position. In the future, we plan to use disorder as well. Our collaborators conduct matches via the seqr web application that show matches as they happen in real-time and incoming matches launch alerts. Incoming match related follow-up requests are gathered in a mailing list that multiple staff curate for a faster response. The primary analyst for the matched patient then facilitates the collaboration and monitors progress.</td>
-    <td>matchbox defines similarity as individuals who share at least one affected gene candidate. To rank these matches, when available, we use attributes such as phenotypes, zygosity, variant type and position. In the future, we plan to use disorder as well.</td>
-    <td>Our collaborators conduct matches via the seqr web application that show matches as they happen in real-time. </td>
-    <td>Incoming matches launch alerts. Incoming match related follow-up requests are gathered in a mailing list that multiple staff curate for a faster response. The primary analyst for the matched patient then facilitates the collaboration and monitors progress. We do not alert external center matches automatically, our collaborator decides on who they will want us to (or they) contact </td>
+    <tr>
+    <td>IRUD (Japan)</td>
+    <td>IRUD project operates "IRUD Exchange" which is based on Patient Archive. Access to the server is restricted using public key infrastructure (PKI) for secure data-sharing. Only clinicians and researchers who join IRUD project can access and register patients' information.</td>
+    <td>Uses a joint phenotype-gene similarity approach computed via a linear interpolation of a phenotype and a gene score. The phenotype score is an adaptation of the travelling salesman algorithm applied to phenotypes grouped based on top-level HPO abnormalities (e.g., abnormality of the cardiovascular system, etc). The gene score is an average of the number of genes matched from the incoming candidate into shared patients.</td>
+    <td>Matching/searching triggered from the platform takes place in real time - i.e., results are returned and presented to the user immediately.</td>
+    <td>Incoming matches are notified by email - if the user has ticked the notification box when sharing the case.</td>
   </tr>
   <tr>
     <td>Monarch Initiative (USA)</td>
@@ -498,10 +499,25 @@ title: Clinicians & Laboratories
   </tr>
   <tr>
     <td>PhenomeCentral (Canada)</td>
-    <td>&nbsp;</td>
+    <td>All PhenomeCentral account requests are manually vetted to facilitate secure data-sharing among clinicians and scientists. Phenotypic information can be entered and standardized according to the Human Phenotype Ontology. Candidate genes can be curated by the submitter and/or identified in uploaded genomic data (whole exome VCF files) using the Exomiser. At this time disorder, phenotype, and manually curated genes are used for matching across the MME. Submitters can review matches for their cases and choose to contact the owner of another case regarding potential collaboration.</td>
     <td>PhenomeCentral matches on a combination of phenotype, candidate gene, and disorder. First, the database is searched for both the most phenotypically-similar cases and any cases with the same candidate gene. Phenotype searching is done with a lucene query using all induced HPO terms, and the top 50 cases are considered. These phenotype and genotype search results are combined and scored fully, before returning the top 10. The patient score is the average of the phenotype and genotype scores. The phenotype scoring uses simGIC, with a boost if the two patients have the same diagnosis. The genotype score is 1.0 if both patients share a candidate gene. For local matches within PhenomeCentral, exome variants prioritized by the Exomiser are also used for matching.</td>
     <td>Users can view matching results in real-time within the PhenomeCentral portal. We are currently testing a feature where a Genetic Counsellor will send match requests for all patients, view the matches, and decide whether or not to send an email notification to users.</td>
     <td>Incoming matches do not currently display within PhenomeCentral or trigger a notification. In the upcoming feature, these incoming matches are shown to the Genetic Counsellor that reviews matches, who will decide whether or not to send an email notification to the user.</td>
+  </tr>
+   <tr>
+     <tr>
+    <td>RD-Connect GPAP</td>
+    <td>In the RD-Connect GPAP, every experiment (all the variants from an exome or a genome) is linked to the corresponding individual's record for which information is collected using HPO, ORDO and OMIM (if available). RD-Connect GPAP data submitters can grant permission for experiments to participate in MME queries. Queries from connected nodes are only applied to those experiments with permission, and queries from the GPAP to connected nodes can only originate from those experiments. All registered users with access rights on those experiments are able to tag candidate variants and genes and initiate MME queries. Queries originating from the RD-connect GPAP include the candidate gene and the phenotypes from the individual (HPO).</td>
+    <td>MME requests are evaluated on all experiments consented by the submitter to be part of MME. We search for matching candidate genes and phenotypic similarity. Total score ranges from 0 to 1, with 0.5 being from the candidate gene matching and 0.5 from the phenotypic similarity. Candidate gene mathcing is 0 (if no gene match is identified) or 0.5 (if at least one gene is common between the two records). Phenotypic similarity (rangin from 0 to 0.5) is identified by computing the Union over Intersect score (UI score), which takes into account all HPO terms provided by the querier and the ones available for each individual within RD-Connect.</td>
+    <td>When an RD-Connect GPAP user MME to find similar patients in connected nodes, the results are immediately displayed to the user. If a user decides to follow-up on any of the matches, an e-mail is sent simultaneously to both users, the one controlling the experiment in the RD-Connect GPAP and the user controlling the record in the other node. The e-mail contains the matched gene and HPO terms, as well as the relevant ID from RD-Connect and the other node.</td>
+    <td>Matching experiments are sent to the querying node, containing the matched gene, HPO terms, and relevant IDs. Contact info provided to the querying node is a MME dedicated email address at RD-connect GPAP. If a follow-up request is received, the RD-Connect GPAP helpdesk forwards it to the experiment submitter.</td>
+  </tr>
+   <tr>
+    <td><i>seqr</i> (USA)</td>
+    <td>seqr defines similarity as individuals who share at least one affected gene candidate. To rank these matches, when available, we use attributes such as phenotypes, zygosity, variant type and position. In the future, we plan to use disorder as well. Our collaborators conduct matches via the seqr web application that show matches as they happen in real-time and incoming matches launch alerts. Incoming match related follow-up requests are gathered in a mailing list that multiple staff curate for a faster response. The primary analyst for the matched patient then facilitates the collaboration and monitors progress.</td>
+    <td>seqr defines similarity as individuals who share at least one affected gene candidate. To rank these matches, when available, we use attributes such as phenotypes, zygosity, variant type and position. In the future, we plan to use disorder as well.</td>
+    <td>Our collaborators conduct matches via the seqr web application that show matches as they happen in real-time.</td>
+    <td>Incoming matches launch alerts. Incoming match related follow-up requests are gathered in a mailing list that multiple staff curate for a faster response. The primary analyst for the matched patient then facilitates the collaboration and monitors progress. We do not alert external center matches automatically, our collaborator decides on who they will want us to (or they) contact. </td>
   </tr>
 </table>
 
