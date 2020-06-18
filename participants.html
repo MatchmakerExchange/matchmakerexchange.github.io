@@ -15,3 +15,582 @@ title: Matchmaker Exchange Participants
 <div class='container'>
   <div class='row-fluid clearfix padding-bottom-lg padding-top-lg'>
     <div class='col-sm-12 col-xs-12'>
+<div class="center-block" style="max-width: 600px">
+        <img src='assets/images/wheel.png' class='img-responsive' />
+      </div>
+      <p>Matchmaker Services Connected by the MME API:
+        <ul>
+
+          <li><a href="https://decipher.sanger.ac.uk/">DECIPHER</a></li>
+          <li><a href="https://genematcher.org/">GeneMatcher</a></li>
+          <li><a href="https://www.amed.go.jp/en/program/IRUD/">IRUD: Integrating Knowledge for Diagnoses</a></li>
+          <li><a href="https://www.mygene2.org/">MyGene2</a></li>
+            <li><a href="https://github.com/Clinical-genomics/patientmatcher/">PatientMatcher</a></li>
+          <li><a href="https://phenomecentral.org/">PhenomeCentral</a></li>
+          <li><a href="https://platform.rd-connect.eu/">RD-Connect Genome-Phenome Analysis Platform</a></li>
+          <li><a href="https://seqr.broadinstitute.org/matchmaker/matchbox"><i>seqr</i></a></li>
+        </ul>
+      </p>
+      <h3 class="padding-top-lg">Types of Data Stored by Each of the Participating Matchmaker Exchange Services</h3>
+
+<table class="table table-striped table-bordered table-responsive">
+  <thead>
+    <tr>
+      <td rowspan="2">Service</td>
+      <td colspan="3" class="text-center info">Phenotype</td>
+      <td>&nbsp;</td>
+      <td colspan="4" class="text-center success">Genotype</td>
+      <td colspan="4" class="text-center warning">Candidates</td>
+    </tr>
+    <tr>
+      <td class="info text-sm text-tight">Condition Name</td>
+      <td class="info text-sm text-tight">Diagnosis Code</td>
+      <td class="info text-sm text-tight">Phenotypic Terms</td>
+      <td class="text-sm text-tight">Non-Human Models</td>
+      <td class="success text-sm text-tight">Gene ID</td>
+      <td class="success text-sm text-tight">Chromosomal Coordinates</td>
+      <td class="success text-sm text-tight">Flagged Candidate Variants</td>
+      <td class="success text-sm text-tight">VCF Files or Equivalent</td>
+      <td class="warning text-sm text-tight">Flagged Gene Candidates</td>
+      <td class="warning text-sm text-tight">Evidence for Gene Candidates</td>
+      <td class="warning text-sm text-tight">Variant Classification</td>
+      <td class="warning text-sm text-tight">Variant Evidence</td>
+    </tr>
+  </thead>
+
+  <tr>
+    <td>DECIPHER (UK)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+  <tr>
+    <td>GeneMatcher (USA)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>IRUD (Japan)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr>
+    <td>Monarch Initiative (USA)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>MyGene2 (USA)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>PatientMatcher (Sweden)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>PhenomeCentral (Canada)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+   <tr>
+    <td>RD-Connect GPAP (Europe)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+    <tr>
+    <td><i>seqr</i> (USA)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+<td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+   <td><span class='glyphicon glyphicon-ok'></span></td>
+  <td><span class='glyphicon glyphicon-ok'></span></td>
+<td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+</table>
+
+      <h3 class="padding-top-lg">Parameters Used for Matching and Score Output</h3>
+
+<table class="table table-striped table-bordered table-responsive">
+  <thead>
+    <td class="info">Service</td>
+    <td class="info text-sm text-tight">Gene ID</td>
+    <td class="info text-sm text-tight">Diagnosis Code</td>
+    <td class="info text-sm text-tight">Phenotypic Terms</td>
+    <td class="info text-sm text-tight">Variant Parameters</td>
+    <td class="info text-sm text-tight">Provides Match Score Output</td>
+  </thead>
+
+  <tr>
+    <td>DECIPHER (UK)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+  <tr>
+    <td>GeneMatcher (USA)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+  <tr>
+    <td>IRUD (Japan)</td>  
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+  <tr>
+    <td>Monarch Initiative (USA)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+  <tr>
+    <td>MyGene2 (USA)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td></td>
+   <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+  <tr>
+    <td>PatientMatcher (Sweden)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+   <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+  <tr>
+    <td>PhenomeCentral (Canada)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+  <tr>
+    <td>RD-Connect GPAP (Europe)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+      <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+    <tr>
+    <td><i>seqr</i> (USA)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+</table>
+
+
+
+
+
+
+<h3 class="padding-top-lg">Matchmaker Exchange Connections</h3>
+
+<table class="table table-striped table-bordered table-responsive">
+  <thead>
+    <tr>
+      <td></td>
+      <td colspan="8" class="text-center info">Querying Service</td>
+    </tr>
+    <tr>
+      <td class="info">Responding Service</td>
+
+      <td class="text-sm text-tight">DECIPHER</td>
+      <td class="text-sm text-tight">GeneMatcher</td>
+       <td class="text-sm text-tight">IRUD</td>
+      <td class="text-sm text-tight">MyGene2</td>
+         <td class="text-sm text-tight">PatientMatcher</td>
+      <td class="text-sm text-tight">PhenomeCentral</td>
+        <td class="text-sm text-tight">RD-Connect GPAP</td>
+        <td class="text-sm text-tight"><i>seqr</i></td>
+    </tr>
+  </thead>
+
+  <tr>
+    <td>DECIPHER (UK)</td>
+
+    <td><span class='glyphicon glyphicon-ban-circle'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+       <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+     <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+      <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+  <tr>
+    <td>GeneMatcher (USA)</td>
+
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ban-circle'></span></td>
+     <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+     <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+       <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+      <td>IRUD (Japan)</td>
+
+      <td>&nbsp;</td>
+     <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ban-circle'></span></td>
+     <td>&nbsp;</td>
+   <td>&nbsp;</td>
+     <td><span class='glyphicon glyphicon-ok'></span></td>
+     <td>&nbsp;</td>
+     <td>&nbsp;</td>
+  </tr>
+
+  <tr>
+    <td>Monarch Initiative (USA)</td>
+
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+     <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+     <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>MyGene2 (USA)</td>
+
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ban-circle'></span></td>
+     <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+    
+   <tr>
+    <td>PatientMatcher (Sweden)</td>
+
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+     <td><span class='glyphicon glyphicon-ok'></span></td>
+   <td><span class='glyphicon glyphicon-ban-circle'></span></td>
+  <td>&nbsp;</td>
+     <td>&nbsp;</td>
+   <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+  <tr>
+    <td>PhenomeCentral (Canada)</td>
+
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+     <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ban-circle'></span></td>
+      <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+         <td>RD-Connect GPAP (Europe)</td>
+
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+     <td>&nbsp;</td>
+     <td>&nbsp;</td>
+  <td>&nbsp;</td>
+    <td>&nbsp;</td>
+      <td><span class='glyphicon glyphicon-ok'></span></td>
+  <td><span class='glyphicon glyphicon-ban-circle'></span></td>
+   <td>&nbsp;</td>
+  </tr>
+       <td><i>seqr</i> (USA)</td>
+
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+     <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  <td><span class='glyphicon glyphicon-ok'></span></td>
+      <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+        <td><span class='glyphicon glyphicon-ban-circle'></span></td>
+  </tr>
+</table>
+
+
+
+
+      <h3 class="padding-top-lg">Types of Users</h3>
+
+<table class="table table-striped table-bordered table-responsive">
+  <thead>
+    <td class="info">Service</td>
+    <td class="info text-sm text-tight">Clinicians</td>
+    <td class="info text-sm text-tight">Patients</td>
+    <td class="info text-sm text-tight">Researchers</td>
+  </thead>
+
+  <tr>
+    <td>DECIPHER (UK)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+  <tr>
+    <td>GeneMatcher (USA)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+  <tr>
+    <td>IRUD (Japan)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+
+  <tr>
+    <td>Monarch Initiative (USA)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+  <tr>
+    <td>MyGene2 (USA)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+  <tr>
+    <td>PatientMatcher (Sweden)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+  <tr>
+    <td>PhenomeCentral (Canada)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+   <tr>
+    <td>RD-Connect GPAP (Europe)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+    <tr>
+    <td><i>seqr</i> (USA)</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+    <td>&nbsp;</td>
+    <td><span class='glyphicon glyphicon-ok'></span></td>
+  </tr>
+</table>
+
+
+      <h3 class="padding-top-lg">Matchmaker Exchange Matching and Notification Protocols</h3>
+        <p>Each Matchmaker Exchange service has defined their own protocol for determing matches. The table below (<a href="assets/files/MME_Matching_Protocols_and_Notification_Method_2020-02-12.pdf" target="_blank">download here</a>) summarizes how each service determines matches, as well as how users are notified when their query results in a match or their data is matched on.</p>
+
+<table class="table table-striped table-bordered table-responsive">
+  <thead>
+    <td class="info">Service</td>
+    <td class="info text-sm text-tight">Background and other relevant information</td>
+    <td class="info text-sm text-tight">Matching and scoring protocol</td>
+    <td class="info text-sm text-tight">Internally-initiated matches: How users are notified when their query results in a match</td>
+    <td class="info text-sm text-tight">Externally-initiated matches: How users are notified when their data was matched on</td>
+  </thead>
+
+  <tr>
+    <td>DECIPHER (UK)</td>
+    <td><p>To get the best matches from DECIPHER, include genomic coordinate information with your patient deposition into the system you are querying from. The scoring algorithm for variant similarity takes into account the VEP consequence, assessing the severity and similarity of the consequence. DECIPHER calls this a functional similarity score.</p> <p>All contact requests made from external users, whether using Matchmaker Exchange functionality, or using the advance search functionality on the DECIPHER site, are manually vetted for authenticity before being forwarded.
+</p></td>
+    <td><p>When a Matchmaker Exchange request is sent to DECIPHER, we evaluate all open-access patients and variants for similarity.</p>
+        <p>First, if any variants are given for the patient, we find variants in our system which overlap the same position. If the position of variants are not given, the gene is used as the position.</p>
+        <p>Primarily, genotypic level data is used for matching, falling back to phenotypic data if no genotypic level data is available.</p>
+        <p>For phenotypic similarity, we generate a UI (Union over Intersect) score against every open-access patient with phenotypes, which takes into account all ancestor terms for both the given patient and patients within DECIPHER.</p></td>
+    <td>When a DECIPHER user uses the Matchmaker Exchange functionality to find similar patients in other systems, the results are immediately shown to the user when received, and they may follow any links or emails returned.</td>
+    <td><p>Our users are not currently notified. We feel that if the external user found a good match, they will make contact.</p>
+        <p>When an external system wants to find similar patients within DECIPHER using the Matchmaker Exchange functionality, the results include a DECIPHER URL for the patient record. The external user may view all the open-access information about that patient, and make a contact request to the responsible clinician through DECIPHER using our contact request form.</p></td>
+  </tr>
+  <tr>
+    <td>GeneMatcher (USA)</td>
+    <td>GeneMatcher allows users to create submissions which contain MIM number, inheritance, genes, variants, and phenotypes. Matches are automatically made when the user saves their submission, and can initiate a match against MME at any time, selecting which MME servers to match against.</td>
+    <td>By default GeneMatcher matches gene identifiers, but users can also include matching on MIM number, genomic coordinates and phenotypes, this can be optional or required. Phenotypes are matched using the Wang overlap coefficient (this is referenced on the GeneMatcher website). Additionally, users can further restrict matching to any or all of researchers, healthcare providers and patients. Notification is done by email with all parties being notified simultaneously. GeneMatcher excludes patients from matching when receiving MME match requests, and does not allow patients to make MME match requests.</td>
+    <td>An email is generated simultaneously to all parties in the match and includes all information matched on.</td>
+    <td>An email is generated simultaneously to all parties in the match and includes all information matched on.</td>
+  </tr>
+    <tr>
+    <td>IRUD (Japan)</td>
+    <td>IRUD project operates "IRUD Exchange" which is based on Patient Archive. Access to the server is restricted using public key infrastructure (PKI) for secure data-sharing. Only clinicians and researchers who join IRUD project can access and register patients' information.</td>
+    <td>Uses a joint phenotype-gene similarity approach computed via a linear interpolation of a phenotype and a gene score. The phenotype score is an adaptation of the travelling salesman algorithm applied to phenotypes grouped based on top-level HPO abnormalities (e.g., abnormality of the cardiovascular system, etc). The gene score is an average of the number of genes matched from the incoming candidate into shared patients.</td>
+    <td>Matching/searching triggered from the platform takes place in real time - i.e., results are returned and presented to the user immediately.</td>
+    <td>Incoming matches are notified by email - if the user has ticked the notification box when sharing the case.</td>
+  </tr>
+  <tr>
+    <td>Monarch Initiative (USA)</td>
+    <td>The Monarch Initiative MME server operates purely on provided patient phenotypes. The phenotypes are used to compare the patient to model organisms and diseases using the Monarch compare API. Given Monarch contains no patient data, no notifications of matches are sent. Source code can be found at <a href="https://github.com/monarch-initiative/monarch-mme" target="_blank">https://github.com/monarch-initiative/monarch-mme</a></td>
+    <td>The Monarch MME service calls the Monarch Phenotype Analysis service (Human front-end at <a href="https://monarchinitiative.org/analyze/phenotypes" target="_blank">https://monarchinitiative.org/analyze/phenotypes</a>).The model organism and disease matches are ranked according to phenotype similarity as calculated using OwlSim (owlsim.org).</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>MyGene2 (USA)</td>
+    <td>MyGene2 accepts profile submissions from clinicians/healthcare providers and from patients worldwide. All profiles submitted by clinicians/healthcare providers or researchers are classified by the submitter using a short series of questions. Submissions that describe an individual with a known gene underlying a known phenotype are not shared via MME to reduce noise in the MME network. All other submissions that involve a novel gene, novel phenotype, or phenotype expansion are shared via MME. Family/patient-submitted profiles in MyGene2 are excluded from matching via MME due to current MME rules. </td>
+    <td>MyGene2 currently matches on gene identifiers, with matching on phenotype, MIM number, and other data types planned. When a Matchmaker Exchange request is sent to MyGene2, we evaluate C/R submitted profiles for matching genes using ENSEMBL and HGNC identifiers, as well as (as a fall-back) gene symbols.</td>
+    <td>Matching/searching MME from MyGene2 takes place immediately upon case submission, and all connected nodes are searched. Users can view match results in real-time in their MyGene2 dashboard. Users also receive an email notification (that can be disabled by the user) for each match. Email notifications can also be disabled globally for all cases submitted by a MyGene2 user.</td>
+    <td>MyGene2 users can view match results in real-time in their MyGene2 dashboard and may also receive an email notification (that can be disabled by the user) for each match. The external MME node that sent the query to MyGene2 is provided with data including a link to the matching MyGene2 profile and the name and contact information for the MyGene2 submitter. Because all cases submitted by clinicians or researchers to MyGene2 are public, the initiating user can use the link to the MyGene2 profile and determine if the match is worth pursuing.</td>
+  </tr>
+    <tr>
+    <td>PatientMatcher (Sweden)</td>
+    <td>PatientMatcher represents a collaboration between four key units in the Stockholm region providing whole-genome sequencing based diagnostics of rare inherited diseases. The partners are Clinical Genomics Stockholm facility at Science for Life Laboratory (SciLifeLab), and Center for inherited metabolic diseases, Clinical Genetics and Immunology and Transfusion Medicine at the Karolinska University Hospital. The node accepts patient from clinicians/healthcare providers and the case submission policy states that patients should either contain novel candidate genes or novel phenotypes associated to a known pathogenic gene/variant. Clinicians should also provide specific phenotypes (HPO terms) and/or diagnoses (MIM numbers) for each submitted patient. All submitted cases are manually curated and submitted via the Scout analysis portal by a registered and authorized collaborator.</td>
+    <td>Patient similarity score computation is taking into account genotype and phenotype similarity across patients. The weight of these two factors is numerically evaluated into a GTscore and a PhenoScore, and the sum of the 2 constitutes the similarity score of the patient (max patient score=1). The relative weight of the GTscore and the PhenoScore is customizable, and in the current implementation of the server genotyping matching is prioritized (max score=0.75) over phenotype matching (max score=0.25). GTscore score is based both gene and variant matching, with higher score assigned to complete variant matching. PhenoScore is based on HPO term similarity, calculated as the simGIC score obtained by comparing HPO terms of a query patient with those from a matching patient. If disorder information (MIM numbers) is available it will also be evaluated when computing the total phenotype similarity score.</td>
+    <td>Our collaborators initiate matches using the Scout user interface, where patient and sequencing data (variants), as well as analysis tools are present. Searches might be initiated against one or all connected nodes, but also other patients from PatientMatcher. The Scout interface allows users to monitor patient matching in real time. Partial email notifications, containing external patient ID and contact information are sent to the patient in case of positive matching.</td>
+    <td>PatientMatcher users are notified by email when an external patient matches with one of their submitted cases. For privacy reasons only partial email notifications, containing external patient ID and contact information, are sent via email. Complete matching information is always available in real time on the Scout portal.</td>
+  </tr>
+  <tr>
+    <td>PhenomeCentral (Canada)</td>
+    <td>All PhenomeCentral account requests are manually vetted to facilitate secure data-sharing among clinicians and scientists. Phenotypic information can be entered and standardized according to the Human Phenotype Ontology. Candidate genes can be curated by the submitter and/or identified in uploaded genomic data (whole exome VCF files) using the Exomiser. At this time disorder, phenotype, and manually curated genes are used for matching across the MME. Submitters can review matches for their cases and choose to contact the owner of another case regarding potential collaboration.</td>
+    <td>PhenomeCentral matches on a combination of phenotype, candidate gene, and disorder. First, the database is searched for both the most phenotypically-similar cases and any cases with the same candidate gene. Phenotype searching is done with a lucene query using all induced HPO terms, and the top 50 cases are considered. These phenotype and genotype search results are combined and scored fully, before returning the top 10. The patient score is the average of the phenotype and genotype scores. The phenotype scoring uses simGIC, with a boost if the two patients have the same diagnosis. The genotype score is 1.0 if both patients share a candidate gene. For local matches within PhenomeCentral, exome variants prioritized by the Exomiser are also used for matching.</td>
+    <td>Users can view matching results in real-time within the PhenomeCentral portal. We are currently testing a feature where a Genetic Counsellor will send match requests for all patients, view the matches, and decide whether or not to send an email notification to users.</td>
+    <td>Incoming matches do not currently display within PhenomeCentral or trigger a notification. In the upcoming feature, these incoming matches are shown to the Genetic Counsellor that reviews matches, who will decide whether or not to send an email notification to the user.</td>
+  </tr>
+   <tr>
+     <tr>
+    <td>RD-Connect GPAP (Europe)</td>
+    <td>In the RD-Connect GPAP, every experiment (all the variants from an exome or a genome) is linked to the corresponding individual's record for which information is collected using HPO, ORDO and OMIM (if available). RD-Connect GPAP data submitters can grant permission for experiments to participate in MME queries. Queries from connected nodes are only applied to those experiments with permission, and queries from the GPAP to connected nodes can only originate from those experiments. All registered users with access rights on those experiments are able to tag candidate variants and genes and initiate MME queries. Queries originating from the RD-connect GPAP include the candidate gene and the phenotypes from the individual (HPO).</td>
+    <td>MME requests are evaluated on all experiments consented by the submitter to be part of MME. We search for matching candidate genes and phenotypic similarity. Total score ranges from 0 to 1, with 0.5 being from the candidate gene matching and 0.5 from the phenotypic similarity. Candidate gene matching is 0 (if no gene match is identified) or 0.5 (if at least one gene is common between the two records). Phenotypic similarity (ranging from 0 to 0.5) is identified by computing the Union over Intersect score (UI score), which takes into account all HPO terms provided by the querier and the ones available for each individual within RD-Connect.</td>
+    <td>When an RD-Connect GPAP user MME to find similar patients in connected nodes, the results are immediately displayed to the user. If a user decides to follow-up on any of the matches, an e-mail is sent simultaneously to both users, the one controlling the experiment in the RD-Connect GPAP and the user controlling the record in the other node. The e-mail contains the matched gene and HPO terms, as well as the relevant ID from RD-Connect and the other node.</td>
+    <td>Matching experiments are sent to the querying node, containing the matched gene, HPO terms, and relevant IDs. Contact info provided to the querying node is a MME dedicated email address at RD-connect GPAP. If a follow-up request is received, the RD-Connect GPAP helpdesk forwards it to the experiment submitter.</td>
+  </tr>
+   <tr>
+    <td><i>seqr</i> (USA)</td>
+    <td><i>seqr</i> defines similarity as individuals who share at least one affected gene candidate. To rank these matches, when available, we use attributes such as phenotypes, zygosity, variant type and position. In the future, we plan to use disorder as well. Our collaborators conduct matches via the <i>seqr</i> web application that show matches as they happen in real-time and incoming matches launch alerts. Incoming match related follow-up requests are gathered in a mailing list that multiple staff curate for a faster response. The primary analyst for the matched patient then facilitates the collaboration and monitors progress.</td>
+    <td><i>seqr</i> defines similarity as individuals who share at least one affected gene candidate. To rank these matches, when available, we use attributes such as phenotypes, zygosity, variant type and position. In the future, we plan to use disorder as well.</td>
+    <td>Our collaborators conduct matches via the <i>seqr</i>  web application that show matches as they happen in real-time.</td>
+    <td>Incoming matches launch alerts. Incoming match related follow-up requests are gathered in a mailing list that multiple staff curate for a faster response. The primary analyst for the matched patient then facilitates the collaboration and monitors progress. We do not alert external center matches automatically, our collaborator decides on who they will want us to (or they) contact. </td>
+  </tr>
+</table>
+
+
+      <p>&nbsp;</p>
+      <a href='#top' class='pull-right'><span class='glyphicon glyphicon-arrow-up'></span> Return to top </a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!--/content-->
+{% include footer.html %}
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
