@@ -584,11 +584,18 @@ title: Matchmaker Exchange Participants
     <td>Matching/searching triggered from the platform takes place in real time - i.e., results are returned and presented to the user immediately.</td>
     <td>Incoming matches are notified by email - if the user has ticked the notification box when sharing the case.</td>
   </tr>
+   <tr>
+    <td>ModelMatcher (USA)</td>
+    <td>Scientists register their human or model organism genes of interest in the "Scientist Registry". Users who wish to connect with these Scientists register their human genes of interest in the "Match Dashboard". ModelMatcher then generates a table in the Match Dashboard showing all the Scientists who share a gene of interest with them. The users are able to send official Match Requests to each Scientists via the Match Dashboard. The Match Dashboard will also keep track of when the last message was sent. The Scientist can then respond to the Match Request by contacting the Match Dashboard user through email.</td>
+    <td>ModelMatcher uses DIOPT to find homologs to human genes. Currently, we use a score > 5 and best score in either forward or reverse as cutoffs for homologous genes. For some species that are not covered by DIOPT (e.g. E. coli) or there are true homologous gene pairs with low DIOPT scores, we try to manually add them to our list of potential ortholog candidates (the taxon and gene ID's in this file are all NCBI format). We are always trying to improve our system, so if you notice a homologous gene is not coming up, or a non-homologous gene is, please reach out to us using the feedback feature. Our team will review the relevant data and change our homolog outputs to increase our accuracy!</td>
+    <td>Internally-initiated matches take place in real time through the match dashboard. ModelMatcher users (scientists, clinicians, and other users) can choose to initiate a match using their registered genes by selecting the external databases they would like to connect with. Users are notified of results as soon as they are received. An email will also be sent to the user with match details.</td>
+    <td>Registered scientist users will be notified of incoming matches by email. All registered genes will be visible to external registries, but some identifiying information may be concealed by privacy settings. Contact information or a contact form will be provided to external registries. </td>
+  </tr>
   <tr>
     <td>Monarch Initiative (USA)</td>
     <td>The Monarch Initiative MME server operates purely on provided patient phenotypes. The phenotypes are used to compare the patient to model organisms and diseases using the Monarch compare API. Given Monarch contains no patient data, no notifications of matches are sent. Source code can be found at <a href="https://github.com/monarch-initiative/monarch-mme" target="_blank">https://github.com/monarch-initiative/monarch-mme</a></td>
     <td>The Monarch MME service calls the Monarch Phenotype Analysis service (Human front-end at <a href="https://monarchinitiative.org/analyze/phenotypes" target="_blank">https://monarchinitiative.org/analyze/phenotypes</a>).The model organism and disease matches are ranked according to phenotype similarity as calculated using OwlSim (owlsim.org).</td>
-    <td>&nbsp;</td>
+     <td>&nbsp;</td>
     <td>&nbsp;</td>
   </tr>
   <tr>
@@ -609,8 +616,8 @@ title: Matchmaker Exchange Participants
     <td>PhenomeCentral (Canada)</td>
     <td>All PhenomeCentral account requests are manually vetted to facilitate secure data-sharing among clinicians and scientists. Phenotypic information can be entered and standardized according to the Human Phenotype Ontology. Candidate genes can be curated by the submitter and/or identified in uploaded genomic data (whole exome VCF files) using the Exomiser. At this time disorder, phenotype, and manually curated genes are used for matching across the MME. Submitters can review matches for their cases and choose to contact the owner of another case regarding potential collaboration.</td>
     <td>PhenomeCentral matches on a combination of phenotype, candidate gene, and disorder. First, the database is searched for both the most phenotypically-similar cases and any cases with the same candidate gene. Phenotype searching is done with a lucene query using all induced HPO terms, and the top 50 cases are considered. These phenotype and genotype search results are combined and scored fully, before returning the top 10. The patient score is the average of the phenotype and genotype scores. The phenotype scoring uses simGIC, with a boost if the two patients have the same diagnosis. The genotype score is 1.0 if both patients share a candidate gene. For local matches within PhenomeCentral, exome variants prioritized by the Exomiser are also used for matching.</td>
-    <td>Users can view matching results in real-time within the PhenomeCentral portal. We are currently testing a feature where a Genetic Counsellor will send match requests for all patients, view the matches, and decide whether or not to send an email notification to users.</td>
-    <td>Incoming matches do not currently display within PhenomeCentral or trigger a notification. In the upcoming feature, these incoming matches are shown to the Genetic Counsellor that reviews matches, who will decide whether or not to send an email notification to the user.</td>
+    <td>Users can view matching results in real-time within the PhenomeCentral portal. Matches for specific genes are accessible by visiting individual records, while matches across all records in a user's cohort can be viewed using an aggregate table called the My Matches table.</td>
+    <td>Incoming matches do not currently trigger a notification for PhenomeCentral users, however they can be viewed by visiting a specific record, or on a cohort-wide basis through the My Matches table.</td>
   </tr>
    <tr>
      <tr>
